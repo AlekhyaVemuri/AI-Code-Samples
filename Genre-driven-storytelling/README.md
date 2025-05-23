@@ -40,19 +40,38 @@ This Sample directory contains:
 ## Run the `Automated Logo Generation` Sample:
 
 ### Using `uv`:
-The sample uses [uv](https://docs.astral.sh/uv/) for environment management. Steps to install `uv` can be found [here](https://docs.astral.sh/uv/getting-started/installation/).
-
-1. Setup the environment
-   - Initialize the environment
-       ```bash
-       uv init
-       ```
-       > Run `uv sync` if your face any dependency issues.
+The sample uses [uv](https://docs.astral.sh/uv/) for environment management. 
+> Steps to install `uv` are as follows. Refer [this documentation](https://docs.astral.sh/uv/getting-started/installation/) this for more information.
+> </br> **Windows:** </br>
+> ```bash
+> powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+> ```
+> 
+> </br> **Linux:** </br>
+> </br> Use curl to download the script and execute it with sh:
+> ```bash
+> curl -LsSf https://astral.sh/uv/install.sh | sh
+> ```
+>
+> </br> If your system doesn't have curl, you can use wget:
+> ```bash
+> wget -qO- https://astral.sh/uv/install.sh | sh
+> ```
+   
+1. In a terminal, navigate to `Genre-driven storytelling Sample` folder:
+   ```bash
+   cd <path/to/folder>
+   ```
    
 2. Launch Jupyter Notebook
+
    ```bash
    uv run jupyter lab
    ```
+   > **NOTE:** Run the below command if you face any dependency issues:
+   > ```bash
+   >   uv clean
+   > ```
 
 ### AI PC from Intel
 <div class="alert alert-block alert-info"> <b>NOTE:</b> You can run the step on both, <b>Windows and Ubuntu</b>. </div>
