@@ -2,7 +2,7 @@ import httpx
 from mcp.server.fastmcp import FastMCP
 
 # Initialize MCP Server
-mcp = FastMCP("weather", host="0.0.0.0", port=8000)
+mcp = FastMCP("weather", host="127.0.0.1", port=8000)
 
 GEOCODE_API = "https://geocoding-api.open-meteo.com/v1/search"
 WEATHER_API = "https://api.open-meteo.com/v1/forecast"

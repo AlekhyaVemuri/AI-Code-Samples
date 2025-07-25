@@ -4,7 +4,7 @@ import os
 from dotenv import load_dotenv
 
 # Initialize MCP Server
-mcp = FastMCP("Air Quality Index", host="0.0.0.0", port=8001)
+mcp = FastMCP("Air Quality Index", host="127.0.0.1", port=8001)
 
 # Load API key for OpenWeatherMap AQI
 load_dotenv()

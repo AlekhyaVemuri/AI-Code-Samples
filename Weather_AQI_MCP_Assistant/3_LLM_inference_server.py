@@ -2,7 +2,7 @@ from fastmcp import FastMCP
 from transformers import pipeline, AutoModelForCausalLM, AutoTokenizer
 
 # Initialize the MCP LLM Server
-mcp = FastMCP("LLM-Inference", host="0.0.0.0", port=8002)
+mcp = FastMCP("LLM-Inference", host="127.0.0.1", port=8002)
 
 
 try:
